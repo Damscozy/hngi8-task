@@ -165,6 +165,8 @@ class Home extends StatelessWidget {
                     SizedBox(
                       height: 50,
                     ),
+                    Image.asset("assets/images/zuri.png"),
+                    Image.asset("assets/images/I4G-Logo.png"),
                     Image.asset("assets/images/hng.png"),
                   ],
                 ),
