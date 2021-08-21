@@ -151,6 +151,7 @@ class Home extends StatelessWidget {
                   20,
                 ),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(
                       Icons.arrow_downward_outlined,
@@ -165,9 +166,67 @@ class Home extends StatelessWidget {
                     SizedBox(
                       height: 50,
                     ),
-                    Image.asset("assets/images/zuri.png"),
-                    Image.asset("assets/images/I4G-Logo.png"),
-                    Image.asset("assets/images/hng.png"),
+                    Text(
+                      "INTERNSHIP OPPORTUNITY BROUGHT TO YOU BY:",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 18,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 40,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Expanded(
+                            child: Image.asset(
+                              "assets/images/zuri.png",
+                              height: 100,
+                              width: double.infinity,
+                            ),
+                          ),
+                          Expanded(
+                            child: Text(
+                              "X",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 24,
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Image.asset(
+                              "assets/images/I4G-Logo.png",
+                              height: 100,
+                              width: double.infinity,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Text(
+                      "THROUGH:",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 18,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 50,
+                    ),
+                    Image.asset(
+                      "assets/images/hng.png",
+                      height: 100,
+                    ),
                   ],
                 ),
               ),
