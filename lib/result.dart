@@ -46,13 +46,15 @@ class Result extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Text(
-                              box.read('name'),
-                              style: TextStyle(
-                                color: Colors.white,
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 10,
+                              ),
+                              child: Text(
+                                box.read('name'),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
                             ),
                           ],
@@ -77,13 +79,15 @@ class Result extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Text(
-                              box.read('desc'),
-                              style: TextStyle(
-                                color: Colors.white,
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 10,
+                              ),
+                              child: Text(
+                                box.read('desc'),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
                             ),
                           ],
